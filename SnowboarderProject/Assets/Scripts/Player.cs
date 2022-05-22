@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        
         if (!stay)
         {
             curretRelaxingTime += Time.deltaTime;
@@ -41,7 +42,7 @@ public class Player : MonoBehaviour
                 curretRelaxingTime = 0;
             }
         }
-
+        
         curretPuhingDelayTime += Time.deltaTime;
         if (StartPushing)
         {
